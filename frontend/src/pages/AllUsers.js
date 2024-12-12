@@ -11,8 +11,8 @@ const AllUsers = () => {
     setLoading(true);
     const fetchUsers = async () => {
       try {
-        const response = await axios.get('http://localhost:4001/api/v1/user/getallusers');
-        // const response = await axios.get('https://authify-h5y8.onrender.com/api/v1/user/getallusers');
+        // const response = await axios.get('http://localhost:4001/api/v1/user/getallusers');
+        const response = await axios.get('https://authify-2dkk.onrender.com/api/v1/user/getallusers');
         if (response.data.success) {
           setUsers(response.data.users);
           console.log(users);

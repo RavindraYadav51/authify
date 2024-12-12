@@ -7,7 +7,7 @@ const PORT = process.env.PORT || 4000;
 const cors = require('cors');
 app.use(
     cors({
-        origin: "http://localhost:3000",
+        origin: "https://authify-khaki.vercel.app",
         credentials: true,
     })
 )

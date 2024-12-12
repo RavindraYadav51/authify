@@ -38,8 +38,8 @@ const SignIn = () => {
 
     try {
       // Send POST request to backend with form data
-      const response = await axios.post('http://localhost:4001/api/v1/auth/signin', formData);
-      // const response = await axios.post('https://authify-h5y8.onrender.com/api/v1/auth/signin', formData);
+      // const response = await axios.post('http://localhost:4001/api/v1/auth/signin', formData);
+      const response = await axios.post('https://authify-2dkk.onrender.com/api/v1/auth/signin', formData);
 
       // Handle successful response (e.g., storing tokens, navigating to dashboard)
       if (response.data.success) {
